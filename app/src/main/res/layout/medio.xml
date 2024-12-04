@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#EDEDED"
+        android:drawablePadding="8dp"
+        android:hint="Name"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+
+        android:hint="Password"
+        android:backgroundTint="#EDEDED"
+        android:padding="12dp"
+
+        android:drawablePadding="6dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toStartOf="@id/nombre"
+        app:layout_constraintEnd_toEndOf="@id/nombre"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/confirmar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Confirm"
+        android:backgroundTint="#EDEDED"
+        android:padding="12dp"
+
+        android:drawablePadding="8dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/contraseña"
+        app:layout_constraintStart_toStartOf="@id/contraseña"
+        app:layout_constraintEnd_toEndOf="@id/contraseña"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload photo"
+        android:textSize="16sp"
+        android:textColor="#4D0066"
+        app:layout_constraintTop_toBottomOf="@id/confirmar"
+        app:layout_constraintStart_toStartOf="@id/confirmar"
+        android:layout_marginTop="46dp" />
+
+
+
+    <ImageView
+        android:id="@+id/foto2"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="120dp"
+        android:contentDescription="Upload photo"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/foto"
+        app:layout_constraintTop_toTopOf="@id/foto" />
+
+    <TextView
+        android:id="@+id/geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow geolocalization"
+        android:textSize="16sp"
+        android:textColor="#4D0066"
+        app:layout_constraintTop_toBottomOf="@id/foto"
+        app:layout_constraintStart_toStartOf="@id/foto"
+        android:layout_marginTop="54dp" />
+
+    <Switch
+        android:id="@+id/switchgeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        app:layout_constraintStart_toEndOf="@id/geo"
+        app:layout_constraintTop_toTopOf="@id/geo" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree with Terms  Conditions"
+        android:textColor="#4D0066"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@id/geo"
+        app:layout_constraintStart_toStartOf="@id/geo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
